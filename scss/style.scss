@@ -33,7 +33,6 @@ body {
     }
 
     @for $s from 1 through 30 {
-        $top: (random(50) + 30) * 1%;
         $left: random(100) * 1%;
         $opacity: (random(30) + 30) * 0.01;
         $duration: random(6) + 4s;
@@ -46,15 +45,12 @@ body {
 
         div.star:nth-child(#{$s}) {
             $d: (3 + random(3));
-            width: $d + px;
-            height: $d + px;
-            border-radius: 50%;
-            background-color: #fff;
+            @include set-size($d + px, $d + px, 50%);
+            background-color: rgb(random(255), random(255), random(255));
             top: 0;
             left: $left;
             transition: all (.5 + random()) + s;
             animation: snowing $duration linear $delay infinite;
-            
         }
     }
 
