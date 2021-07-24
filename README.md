@@ -2,4 +2,4 @@
 
 A project to create snowing animation effect using scss.
 
-[Demo](https://coding.github.io/snowing-animation-scss)
+[Demo](https://codinglau.github.io/snowing-animation-scss)
